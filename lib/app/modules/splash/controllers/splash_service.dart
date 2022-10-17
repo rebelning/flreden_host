@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:async/async.dart';
 
 import 'package:flutter_eden/eden.dart';
+import 'package:roujijisale/app/app.dart';
 
 class SplashService extends EdenBaseService {
   final welcomeStr = ['sparrow', 'loadding...'];
@@ -36,7 +37,8 @@ class SplashService extends EdenBaseService {
     );
     //simulate some long running operation
     await Future.delayed(const Duration(seconds: 5));
-    //cancel the timer once we are done
+    //cancel the timer once we are don
+
     t.cancel();
   }
 }

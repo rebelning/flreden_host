@@ -1,3 +1,5 @@
+import 'package:flrousale/app/modules/account/views/account_index.dart';
+import 'package:flrousale/app/modules/message/views/message_index.dart';
 import 'package:flutter_eden/eden.dart';
 import '/app/modules/publish/views/publish_index.dart';
 import '/app/modules/home/views/home_index.dart';
@@ -49,8 +51,8 @@ class AppComponent extends EdenNavBaseWidget<AppController> {
     return [
       EdenKeepAliveWrapper(child: HomeIndex()),
       EdenKeepAliveWrapper(child: PublishIndex()),
-      EdenKeepAliveWrapper(child: HomeIndex()),
-      EdenKeepAliveWrapper(child: HomeIndex()),
+      EdenKeepAliveWrapper(child: MessageIndex()),
+      EdenKeepAliveWrapper(child: AccountIndex()),
     ];
   }
 }
