@@ -1,12 +1,12 @@
 import 'package:flrousale/app/modules/account/controllers/account_controller.dart';
 import 'package:flrousale/app/modules/message/controllers/message_controller.dart';
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/app.dart';
+
 import 'package:roujijisale/app/modules/home/controllers/home_controller.dart';
 import 'package:roujijisale/app/modules/publish/controllers/publish_controller.dart';
 
 import 'app/modules/root/controllers/app_controller.dart';
-import 'app/modules/root/views/app_component.dart';
+
 import 'app/modules/splash/controllers/splash_service.dart';
 import 'app/modules/splash/views/splash_view.dart';
 import 'app/routes/routes.dart';
@@ -18,6 +18,7 @@ void main() {
     initialRoute: Routes.app.root,
     unknownRoute: Routes.app.unknownRoute,
     getPages: Routes.getPages(),
+    theme: EdenThemeData.lightThemeData(),
     initialBinding: BindingsBuilder(() {
       Get.putAsync(() => AuthService().init());
       Get.lazyPut(() => SplashService());
@@ -44,4 +45,5 @@ void main() {
       );
     },
   ));
+  EdenThemeData.systemUiOverlay();
 }

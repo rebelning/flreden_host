@@ -17,7 +17,7 @@ class HomeIndex extends EdenBaseListWidget<HomeController> {
         child: ButtonWidget(
           label: "login",
           onPressed: () {
-            RouteCore.push(FlRoutes.account.login);
+            RouteCore.push(FLRoutes.account.login);
           },
         ),
       ),

@@ -43,6 +43,6 @@ class RouteAuthMiddleware extends GetMiddleware {
   @override
   RouteSettings? redirect(String? route) {
     Future.delayed(Duration(seconds: 1), () => Get.snackbar("提示", "请先登录APP"));
-    return RouteSettings(name: FlRoutes.account.login);
+    return RouteSettings(name: FLRoutes.account.login);
   }
 }

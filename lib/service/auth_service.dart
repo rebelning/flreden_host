@@ -11,13 +11,13 @@ class AuthService extends EdenBaseService {
 
     print("auth service init...");
     HttpHook().setUnauthorized(() {
-      print("setUnauthorized-unauthorized");
+      // print("setUnauthorized-unauthorized");
       // clearLogin();
     });
 
     HttpHook().setError((value) {
-      print("httpHook-error=$value");
-      SnackbarWidget(Get.context!, error: true, message: value?.toString());
+      // print("httpHook-error=$value");
+      Get.snackbar("提示", "$value");
     });
   }
 }

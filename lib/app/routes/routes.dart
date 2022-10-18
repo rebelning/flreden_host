@@ -17,7 +17,7 @@ abstract class Routes {
       ...app.getRoutePages(),
       ...home.getRoutePages(),
       ...publish.getRoutePages(),
-      ...FlRoutes.getPages(),
+      ...FLRoutes.getPages(),
     ];
   }
 }
