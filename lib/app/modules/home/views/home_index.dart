@@ -1,5 +1,5 @@
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/app.dart';
+
 import '/app/modules/home/controllers/home_controller.dart';
 
 ///
@@ -17,7 +17,7 @@ class HomeIndex extends EdenBaseListWidget<HomeController> {
         child: ButtonWidget(
           label: "login",
           onPressed: () {
-            RouteCore.push(FLRoutes.account.login);
+            // EdenRoute.push(FLRoutes.account.login);
           },
         ),
       ),

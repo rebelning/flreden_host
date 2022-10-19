@@ -73,7 +73,7 @@ android {
             minifyEnabled true
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [APP_NAME: "肉集集"]
+            manifestPlaceholders = [APP_NAME: "rou"]
 
         }
         debug {
@@ -81,7 +81,7 @@ android {
             minifyEnabled false
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [APP_NAME: "肉集集debug"]
+            manifestPlaceholders = [APP_NAME: "Roudebug"]
         }
     }
 }

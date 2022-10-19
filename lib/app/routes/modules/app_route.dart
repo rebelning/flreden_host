@@ -26,7 +26,7 @@ class AppRoute extends EdenBaseRoute {
       routePage(
           name: root,
           page: () => AppComponent(),
-          middlewares: [RouteAuthMiddleware(priority: 0)],
+          // middlewares: [RouteAuthMiddleware(priority: 0)],
           bindingsBuilder: () {
             Get.lazyPut(() => AppController());
           })
