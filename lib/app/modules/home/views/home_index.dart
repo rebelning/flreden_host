@@ -12,15 +12,6 @@ class HomeIndex extends EdenBaseListWidget<HomeController> {
   @override
   Widget buildListView(
       BuildContext context, EdenBaseListController _controller) {
-    return Container(
-      child: Center(
-        child: ButtonWidget(
-          label: "login",
-          onPressed: () {
-            // EdenRoute.push(FLRoutes.account.login);
-          },
-        ),
-      ),
-    );
+    return Container();
   }
 }
