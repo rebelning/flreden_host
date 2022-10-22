@@ -9,7 +9,6 @@ class AuthService extends EdenBaseService {
   void onInit() {
     super.onInit();
 
-    print("auth service init...");
     EdenHttpHook().setUnauthorized(() {
       // print("setUnauthorized-unauthorized");
       // clearLogin();
@@ -17,7 +16,7 @@ class AuthService extends EdenBaseService {
 
     EdenHttpHook().setError((value) {
       // print("httpHook-error=$value");
-      Get.snackbar("提示", "$value");
+      EdenSnackbar(value.toString(), title: "错误");
     });
   }
 }

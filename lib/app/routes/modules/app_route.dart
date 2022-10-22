@@ -24,12 +24,20 @@ class AppRoute extends EdenBaseRoute {
   List<GetPage> getRoutePages() {
     return [
       routePage(
-          name: root,
-          page: () => AppComponent(),
-          // middlewares: [RouteAuthMiddleware(priority: 0)],
-          bindingsBuilder: () {
-            Get.lazyPut(() => AppController());
-          })
+        name: root,
+        page: () => AppComponent(),
+        middlewares: [RouteAuthMiddleware(priority: 0)],
+        bindingsBuilder: () {
+          Get.lazyPut(() => AppController());
+        },
+      ),
+      routePage(
+        name: error404,
+        page: () => ErrorPage(),
+        bindingsBuilder: () {
+          Get.lazyPut(() => ErrorController());
+        },
+      ),
     ];
   }
 }
@@ -42,7 +50,9 @@ class RouteAuthMiddleware extends GetMiddleware {
 
   @override
   RouteSettings? redirect(String? route) {
-    Future.delayed(Duration(seconds: 1), () => Get.snackbar("提示", "请先登录APP"));
-    return RouteSettings(name: FLRoutes.account.login);
+    Get.find();
+    Future.delayed(
+        const Duration(seconds: 1), () => EdenSnackbar("请先登录APP", title: "提示"));
+    return RouteSettings(name: FLRoutes.auth.login);
   }
 }
