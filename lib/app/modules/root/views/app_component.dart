@@ -1,8 +1,10 @@
-import 'package:flrousale/app/modules/account/views/account_index.dart';
+import 'package:flrousale/app/modules/account/me/views/account_index.dart';
+
 import 'package:flrousale/app/modules/message/views/message_index.dart';
 import 'package:flutter_eden/eden.dart';
-import '/app/modules/publish/views/publish_index.dart';
-import '/app/modules/home/views/home_index.dart';
+import 'package:roujijisale/app/modules/root/home/views/home_index.dart';
+import 'package:roujijisale/app/modules/root/publish/views/publish_index.dart';
+
 import '/app/modules/root/controllers/app_controller.dart';
 
 class AppComponent extends EdenNavBaseWidget<AppController> {
