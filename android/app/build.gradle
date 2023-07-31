@@ -43,45 +43,29 @@ android {
 
     defaultConfig {
 
-        applicationId "com.roujiji.sale"
+        applicationId "com.eden.host"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
 
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
-        }
-    }
-    signingConfigs {
-        release {
-            storeFile file("../keystore/roujiji.jks")
-            storePassword = "mroujiji"
-            keyAlias = "mrouji"
-            keyPassword = "mroujiji"
-            // v2SigningEnabled false
 
-        }
-    }
     buildTypes {
 
         release {
             minifyEnabled true
-            signingConfig signingConfigs.release
+//            signingConfig release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [APP_NAME: "rou"]
+            manifestPlaceholders = [APP_NAME: "edenHost"]
 
         }
         debug {
             applicationIdSuffix ".debug"
             minifyEnabled false
-            signingConfig signingConfigs.release
+//            signingConfig release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [APP_NAME: "Roudebug"]
+            manifestPlaceholders = [APP_NAME: "edenHostDebug"]
         }
     }
 }

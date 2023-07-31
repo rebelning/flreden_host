@@ -8,10 +8,10 @@ import 'app/routes/routes.dart';
 void main() {
   runApp(EdenMaterialWrapper(
     unknownRoute: Routes.app.unknownRoute,
-    getPages: Routes.getPages(),
+    onGetPages: () => Routes.getPages(),
     // home: AppComponent(),
     initialRoute: Routes.app.root,
-    theme: EdenThemeData.lightThemeData(),
+    onTheme: () => EdenThemeData.lightThemeData(),
     initialBinding: BindingsBuilder(() {
       Get.putAsync(() => AuthService().init());
       Get.lazyPut(() => SplashService());
