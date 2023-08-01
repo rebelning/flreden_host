@@ -1,9 +1,9 @@
-import 'package:flrousale/app/modules/account/me/views/account_index.dart';
+import 'package:flreden_user/app/modules/account/me/views/account_index.dart';
 
-import 'package:flrousale/app/modules/message/views/message_index.dart';
+import 'package:flreden_user/app/modules/message/views/message_index.dart';
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/modules/root/home/views/home_index.dart';
-import 'package:roujijisale/app/modules/root/publish/views/publish_index.dart';
+import 'package:flreden_host/app/modules/root/home/views/home_index.dart';
+import 'package:flreden_host/app/modules/root/publish/views/publish_index.dart';
 
 import '/app/modules/root/controllers/app_controller.dart';
 

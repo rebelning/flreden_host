@@ -1,5 +1,5 @@
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/modules/root/home/controllers/home_controller.dart';
+import 'package:flreden_host/app/modules/root/home/controllers/home_controller.dart';
 
 ///
 class HomeIndex extends EdenBaseListWidget<HomeController> {

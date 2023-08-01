@@ -1,1 +1,1 @@
-export 'package:flrousale/app/routes/flroutes.dart';
+export 'package:flreden_user/app/routes/flroutes.dart';

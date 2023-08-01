@@ -35,8 +35,10 @@ dependencies:
       url: https://github.com/rebelning/flutter_eden.git
       ref: master
 
-  flrousale:
-    path: ../flrousale
+  flreden_user:
+    git:
+      url: https://github.com/rebelning/flreden_user.git
+      ref: 1.0.0 
 
   
   # The following adds the Cupertino Icons font to your application.

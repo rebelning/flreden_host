@@ -1,4 +1,4 @@
-import 'package:flrousale/service/auth_service.dart';
+import 'package:flreden_user/service/auth_service.dart';
 import 'package:flutter_eden/eden.dart';
 
 import 'app/modules/splash/controllers/splash_service.dart';
