@@ -1,5 +1,5 @@
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/modules/root/publish/controllers/publish_controller.dart';
+import 'package:flreden_host/app/modules/root/publish/controllers/publish_controller.dart';
 
 ///publish
 class PublishIndex extends EdenBaseWidget<PublishController> {

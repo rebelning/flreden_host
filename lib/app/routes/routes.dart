@@ -1,4 +1,4 @@
-import 'package:flrousale/app/routes/flroutes.dart';
+import 'package:flreden_user/app/routes/flroutes.dart';
 import 'package:flutter_eden/eden.dart';
 
 import 'modules/app_route.dart';

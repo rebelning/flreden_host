@@ -1,20 +1,20 @@
-import 'package:flrousale/app/modules/account/me/controllers/account_controller.dart';
-import 'package:flrousale/app/modules/account/me/views/account_index.dart';
-import 'package:flrousale/app/modules/message/controllers/message_controller.dart';
-import 'package:flrousale/app/modules/message/views/message_index.dart';
-import 'package:flrousale/service/auth_service.dart';
+import 'package:flreden_user/app/modules/account/me/controllers/account_controller.dart';
+import 'package:flreden_user/app/modules/account/me/views/account_index.dart';
+import 'package:flreden_user/app/modules/message/controllers/message_controller.dart';
+import 'package:flreden_user/app/modules/message/views/message_index.dart';
+import 'package:flreden_user/service/auth_service.dart';
 import 'package:flutter_eden/eden.dart';
-import 'package:roujijisale/app/app.dart';
-import 'package:roujijisale/app/modules/error/controllers/error_controller.dart';
-import 'package:roujijisale/app/modules/error/view/error_page.dart';
-import 'package:roujijisale/app/modules/root/bindings/app_bindings.dart';
+import 'package:flreden_host/app/app.dart';
+import 'package:flreden_host/app/modules/error/controllers/error_controller.dart';
+import 'package:flreden_host/app/modules/error/view/error_page.dart';
+import 'package:flreden_host/app/modules/root/bindings/app_bindings.dart';
 
-import 'package:roujijisale/app/modules/root/controllers/app_controller.dart';
-import 'package:roujijisale/app/modules/root/home/controllers/home_controller.dart';
-import 'package:roujijisale/app/modules/root/home/views/home_index.dart';
-import 'package:roujijisale/app/modules/root/publish/controllers/publish_controller.dart';
-import 'package:roujijisale/app/modules/root/publish/views/publish_index.dart';
-import 'package:roujijisale/app/modules/root/views/app_component.dart';
+import 'package:flreden_host/app/modules/root/controllers/app_controller.dart';
+import 'package:flreden_host/app/modules/root/home/controllers/home_controller.dart';
+import 'package:flreden_host/app/modules/root/home/views/home_index.dart';
+import 'package:flreden_host/app/modules/root/publish/controllers/publish_controller.dart';
+import 'package:flreden_host/app/modules/root/publish/views/publish_index.dart';
+import 'package:flreden_host/app/modules/root/views/app_component.dart';
 
 class AppRoute extends EdenBaseRoute {
   @override
